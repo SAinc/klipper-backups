@@ -43,7 +43,7 @@ function check_download {
 function link_config {
     echo "[INSTALL] Linking configs to Klipper..."
     # for file in "${INSTALL_PATH}"/config; do ln -sfn "${file}" "${CONFIG_PATH}"; done
-    ln -sfn "${INSTALL_PATH}/config" "${CONFIG_PATH}/config"
+    ln -sfn "${INSTALL_PATH}/config" "${CONFIG_PATH}/"
 }
 
 function restart_klipper {
